@@ -1,0 +1,23 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/assignment
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/assignment/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/saikumarbiradar/C-TEST.git # timeout=10
+Fetching upstream changes from https://github.com/saikumarbiradar/C-TEST.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/saikumarbiradar/C-TEST.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 58a66ae244f9db959fcd2aa08d43d04411cf7d73 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 58a66ae244f9db959fcd2aa08d43d04411cf7d73 # timeout=10
+Commit message: "added all sources"
+ > git rev-list --no-walk 58a66ae244f9db959fcd2aa08d43d04411cf7d73 # timeout=10
+[assignment] $ /bin/sh -xe /tmp/jenkins14857607729652568265.sh
++ cd /var/lib/jenkins/workspace/assignment
++ make
+make: `ABC.exe' is up to date.
+Finished: SUCCESS

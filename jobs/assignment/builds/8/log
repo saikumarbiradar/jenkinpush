@@ -1,0 +1,24 @@
+Started by GitHub push by saikumarbiradar
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/assignment
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/assignment/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/saikumarbiradar/C-TEST.git # timeout=10
+Fetching upstream changes from https://github.com/saikumarbiradar/C-TEST.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/saikumarbiradar/C-TEST.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f0d2298fa1c6136dccca0c69ce9a71a486e6c8ba (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f0d2298fa1c6136dccca0c69ce9a71a486e6c8ba # timeout=10
+Commit message: "this is for webhook"
+ > git rev-list --no-walk 47a596a8e6c6c904ad48df92ecdd4b9a9463655e # timeout=10
+[assignment] $ /bin/sh -xe /tmp/jenkins2631647419780918895.sh
++ cd /var/lib/jenkins/workspace/assignment
++ make
+gcc -c big3.c
+gcc -o ABC.exe main.o big3.o fact.o rev.o
+Finished: SUCCESS
